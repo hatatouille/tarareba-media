@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  @media screen and (min-width: 560px) {
+    .wrapper {
+      margin: 0 3rem;
+      display: flex;
+    }
+  }
+  
+  aside {
+    width: 100px;
+    position: fixed;
+  }
+
+  .main {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+  }
+
+  header {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: lavender;
+  }
+  
+  footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: lavender;
+    display: flex;
+    justify-content: space-between;
+  
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+  
+    li:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+  
+  .content {
+    margin: 1rem;
+  }
